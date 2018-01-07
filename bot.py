@@ -4,8 +4,8 @@ from modules.config import config
 
 bot = Bot(command_prefix='>>>')
 
-@bot.command(pass_context=True)
+@bot.command()
 async def ping(ctx):
-    await bot.send_message(ctx.message.channel, "Pong!")
+    await channel.send("Pong!")
 
 bot.run(config['token'])
